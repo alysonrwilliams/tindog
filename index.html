@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TinDog</title>
     <!-- CSS only -->
     <link
@@ -18,7 +19,7 @@
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">tindog</a>
+          <a class="navbar-brand" href="#title">tindog</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,13 +34,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#cta">Download</a>
               </li>
             </ul>
           </div>
@@ -50,19 +51,19 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-dark btn-lg download-button">
+            <button type="button" class="btn btn-dark btn-sm download-button">
               <i class="fa-brands fa-apple"></i> Download
             </button>
             <button
               type="button"
-              class="btn btn-outline-light btn-lg download-button"
+              class="btn btn-outline-light btn-sm download-button"
             >
               <i class="fa-brands fa-google-play"></i>
               Download
             </button>
           </div>
 
-          <div class="col-lg-6">
+          <div class=" phone-image col-lg-6">
             <img
               class="title-image"
               src="images/iphone6.png"
@@ -162,7 +163,6 @@
       </div>
       </div>
       
-
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -187,44 +187,86 @@
     <!-- Pricing -->
 
     <section id="pricing">
-      <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
 
-      <h3>Chihuahua</h3>
-      <h2>Free</h2>
-      <p>5 Matches Per Day</p>
-      <p>10 Messages Per Day</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
+      <h2 class="pricing-title">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for you and your dog.</p>
 
-      <h3>Labrador</h3>
-      <h2>$49 / mo</h2>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
+      <div class="row">
 
-      <h3>Mastiff</h3>
-      <h2>$99 / mo</h2>
-      <p>Pirority Listing</p>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
+        <div class="pricing-column col-xl-4 col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Pomeranian</h3>
+        </div>
+        <div class="card-body">
+          <h2 class="cost">Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          
+          <button class="w-100 btn btn-lg btn-outline-dark btn-block" type="button">Sign Up</button>
+    
+      </div>
+      </div>
+      </div>
+
+      <div class="pricing-column col-xl-4 col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Labrador</h3>
+        </div>
+        <div class="card-body">
+          <h2 class="cost">$19 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          
+          <button class="w-100 btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
+        
+        </div>
+      </div>
+      </div>
+
+      <div class="pricing-column col-xl-4">
+      <div class="card">
+        <div class="card-header">
+          <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2 class="cost">$39 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches/Messages</p>
+          <p>Unlimited App Usage</p>
+          
+          <button class="sign-up w-100 btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
+        
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+      
     </section>
 
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="download-button btn btn-large btn-dark" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+      <button class="download-button btn btn-large btn-dark" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
-      <p>© Copyright TinDog</p>
+      <div class="social-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+      <p>© Copyright Tindog</p>
     </footer>
     <!-- Bootstrap Script -->
     <script
